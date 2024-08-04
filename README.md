@@ -12,7 +12,7 @@ This is a JavaScript project that generates random knock-knock jokes using a set
 
 ## Collaborators
 
-- [Hein Naing Aung](#https://github.com/HeinNaing)
+- [Hein Naing Aung](https://github.com/HeinNaing)
 
 ## Code Explanation
 ```javascript
