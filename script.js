@@ -8,7 +8,7 @@ const collection = {
 
     firstQuestion: ["Who's there ?"],
 
-    knockNames: ["Annie", "Lettuce", "Boo", "Cow", "Tank", "Harry", "Atch", "Olive", "Orange", "Europe"],
+    knockNames: ["Annie", "Lettuce", "Boo", "Cow", "Tank", "Harry", "Atch", "Olive", "Orange", "Europe", "hein"],
 
     secondQuestion: ["Who?"],
 
@@ -20,28 +20,33 @@ let generateRandomNumber = (input) => {
     return Math.floor(Math.random() * input);
 }
 
-//to generate knock knock
+//to capatilize first letter
+let capatilizeFirstLetter = (letter) => {
+    return letter.charAt(0).toUpperCase() + letter.slice(1);
+}
 
+
+//to generate knock knock
 let generateRandomKnockKnock = (value) => {
     let tempName = "No name"
     for (let properties in value) {
         let randomNumber = generateRandomNumber(collection[properties].length);
         switch (properties) {
             case "knock":
-                console.log(collection[properties][randomNumber]);
+                console.log(capatilizeFirstLetter(collection[properties][randomNumber]));
                 break;
             case "firstQuestion":
-                console.log(collection[properties][randomNumber]);
+                console.log(capatilizeFirstLetter(collection[properties][randomNumber]));
                 break;
             case "knockNames":
                 tempName = collection[properties][randomNumber];
-                console.log(collection[properties][randomNumber]);
+                console.log(capatilizeFirstLetter(collection[properties][randomNumber]));
                 break;
             case "secondQuestion":
-                console.log(tempName + " "  + collection[properties][randomNumber]);
+                console.log(capatilizeFirstLetter(tempName) + " "  + capatilizeFirstLetter(collection[properties][randomNumber]));
                 break;
             case "secondAnswer":
-                console.log(collection[properties][randomNumber]);
+                console.log(capatilizeFirstLetter(collection[properties][randomNumber]));
                 break;
             default:
                 break;
