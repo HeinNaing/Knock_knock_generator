@@ -1,8 +1,10 @@
-#This is My First Portfolio Project for starting backend development.
+# This is My First Portfolio Project for starting backend development.
 
-##Languages and features
-1. JS
-2. Array to query data
+## Languages and Features
 
-##Collaborator
-__No one. Only me__
+- JavaScript (JS)
+- Array to query data
+
+## Collaborator
+
+No one. Only me.
